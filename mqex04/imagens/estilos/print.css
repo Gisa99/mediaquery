@@ -2,10 +2,24 @@
 
 /*media para impressoras*/
 
-@media screen and (min-width:768px) and (max-width: 1024px) {
+@media print {
+  body{
+    background-image: url(../back-print.jpg);
+  }
+
+  img#cel{display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display:none;}
+    img#tv{display: none;}
+  
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
 
     body{
-        background-image: url(../back-tablet.jpg);
+      background-image: url(../back-tablet.jpg);
     }
 
     img#cel{display: none;}
@@ -15,11 +29,12 @@
     img#tv{display: none;}
 }
 
-@media screen and (min-width:1024px) and (max-width: 1440px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
  
     body{
-        background-image: url(../back-pc.jpg);
+      background-image: url(../back-pc.jpg);
     }
+
     img#cel{display: none;}
     img#tablet {display: none;}
     img#print {display: none;}
@@ -28,10 +43,11 @@
     
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1200px) {
   body{
     background-image: url(../back-tv.jpg);
   }
+
   img#cel{display: none;}
   img#tablet {display: none;}
   img#print {display: none;}
